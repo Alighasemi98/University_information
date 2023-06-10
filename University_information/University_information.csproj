@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88E4447C-D296-421C-BFD2-867163EFFC8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>University_information</RootNamespace>
+    <AssemblyName>University_information</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class_changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class_changes.Designer.cs">
+      <DependentUpon>class_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="create account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="create account.Designer.cs">
+      <DependentUpon>create account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employees loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employees loading.Designer.cs">
+      <DependentUpon>employees loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employees_changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employees_changes.Designer.cs">
+      <DependentUpon>employees_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees_password.Designer.cs">
+      <DependentUpon>Employees_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="field_changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="field_changes.Designer.cs">
+      <DependentUpon>field_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="item_selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="item_selection.Designer.cs">
+      <DependentUpon>item_selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lesson_changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lesson_changes.Designer.cs">
+      <DependentUpon>lesson_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="master loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master loading.Designer.cs">
+      <DependentUpon>master loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="master_changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_changes.Designer.cs">
+      <DependentUpon>master_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="master_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_password.Designer.cs">
+      <DependentUpon>master_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="semester_changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="semester_changes.Designer.cs">
+      <DependentUpon>semester_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="separate_class_changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="separate_class_changes.Designer.cs">
+      <DependentUpon>separate_class_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student loading.Designer.cs">
+      <DependentUpon>student loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_Changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_Changes.Designer.cs">
+      <DependentUpon>student_Changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_password.Designer.cs">
+      <DependentUpon>student_password.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="class_changes.resx">
+      <DependentUpon>class_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="create account.resx">
+      <DependentUpon>create account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employees loading.resx">
+      <DependentUpon>employees loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employees_changes.resx">
+      <DependentUpon>employees_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees_password.resx">
+      <DependentUpon>Employees_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="field_changes.resx">
+      <DependentUpon>field_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item_selection.resx">
+      <DependentUpon>item_selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lesson_changes.resx">
+      <DependentUpon>lesson_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master loading.resx">
+      <DependentUpon>master loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_changes.resx">
+      <DependentUpon>master_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_password.resx">
+      <DependentUpon>master_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="semester_changes.resx">
+      <DependentUpon>semester_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="separate_class_changes.resx">
+      <DependentUpon>separate_class_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student loading.resx">
+      <DependentUpon>student loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_Changes.resx">
+      <DependentUpon>student_Changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_password.resx">
+      <DependentUpon>student_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Database2.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database2_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database2.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
